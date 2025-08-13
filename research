@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research - Your Name</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fafafa;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: white;
+            padding: 40px 0;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 30px;
+        }
+
+        .header-content h1 {
+            font-size: 2.5em;
+            color: #666;
+            font-weight: 300;
+            margin-bottom: 10px;
+        }
+
+        .header-content .subtitle {
+            font-size: 1.1em;
+            color: #888;
+            margin-bottom: 20px;
+        }
+
+        nav {
+            margin-top: 30px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #666;
+            font-weight: 400;
+            padding: 8px 0;
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover, nav a.active {
+            color: #007acc;
+            border-bottom-color: #007acc;
+        }
+
+        .content {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        .section h2 {
+            color: #333;
+            font-size: 1.8em;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #007acc;
+            padding-bottom: 10px;
+        }
+
+        .section h3 {
+            color: #555;
+            font-size: 1.4em;
+            margin-bottom: 25px;
+            margin-top: 40px;
+        }
+
+        .publication {
+            margin-bottom: 35px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .publication:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        .publication-number {
+            color: #007acc;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .publication-title {
+            color: #007acc;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1em;
+        }
+
+        .publication-title:hover {
+            text-decoration: underline;
+        }
+
+        .publication-authors {
+            margin: 8px 0;
+            font-size: 0.95em;
+        }
+
+        .publication-authors a {
+            color: #007acc;
+            text-decoration: none;
+        }
+
+        .publication-authors a:hover {
+            text-decoration: underline;
+        }
+
+        .publication-venue {
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .publication-date {
+            color: #888;
+            font-style: italic;
+        }
+
+        .publication-abstract {
+            margin-top: 12px;
+            font-size: 0.95em;
+            line-height: 1.6;
+            color: #444;
+        }
+
+        .award {
+            color: #d63384;
+            font-weight: bold;
+            font-size: 0.9em;
+            margin-top: 8px;
+        }
+
+        .award::before {
+            content: "★ ";
+        }
+
+        .presentation-info {
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .coverage-info {
+            margin-top: 8px;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .publication-links {
+            margin-top: 8px;
+        }
+
+        .publication-links a {
+            color: #007acc;
+            text-decoration: none;
+            margin-right: 15px;
+            font-size: 0.9em;
+        }
+
+        .publication-links a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            header .header-content h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <h1>Your Name</h1>
+                <p class="subtitle">Assistant Professor of [Your Field], [Your University]</p>
+                
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cv.html">CV</a></li>
+                        <li><a href="research.html" class="active">Research</a></li>
+                        <li><a href="teaching.html">Teaching</a></li>
+                        <li><a href="discussions.html">Discussions</a></li>
+                        <li><a href="notebook.html">Notebook</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="content">
+            <div class="section">
+                <h2>Research</h2>
+                
+                <h3>Published / Forthcoming</h3>
+                
+                <div class="publication">
+                    <div class="publication-number">1.</div>
+                    <a href="#" class="publication-title">Cross-sectional Skewness</a>
+                    <div class="publication-authors">
+                        with Jessica A. Wachter 
+                        <a href="#">[SSRN]</a> 
+                        <a href="#">[Paper]</a>
+                    </div>
+                    <div class="publication-venue">Review of Asset Pricing Studies</div>
+                    <div class="publication-date">12(1), March 2022, p.155–198.</div>
+                    <div class="publication-abstract">
+                        We evaluate the skewness in the cross-section of returns in light of predictions from a well-known class of asset pricing models.
+                    </div>
+                </div>
+
+                <div class="publication">
+                    <div class="publication-number">2.</div>
+                    <a href="#" class="publication-title">Pricing of Climate Risk Insurance: Regulation and Cross-Subsidies</a>
+                    <div class="publication-authors">
+                        with Ishita Sen and Ana-Maria Tenekedjieva 
+                        <a href="#">[SSRN]</a> 
+                        <span class="publication-date">(April 2025)</span>
+                    </div>
+                    <div class="publication-venue">Journal of Finance, Forthcoming</div>
+                    <div class="publication-abstract">
+                        Insurers overcome regulatory frictions by cross-subsidizing insurance across states, leading to a decoupling of rates from underlying risk.
+                    </div>
+                    <div class="award">Winner of the 2023 E-axes Forum Research Prize</div>
+                    <div class="award">Winner of the Best Paper Prize in Responsible Finance, European Finance Association, 2022</div>
+                    <div class="coverage-info">
+                        • Coverage: WSJ, CNN, CNBC, House Financial Services Committee Statement for the Record, 2024 Congressional Budget Office Climate Report, HBS Working Knowledge, Financial Times, NY Times, Financial Times, JP Morgan
+                    </div>
+                </div>
+
+                <h3>Working Papers</h3>
+
+                <div class="publication">
+                    <div class="publication-number">3.</div>
+                    <a href="#" class="publication-title">Asset Demand of U.S. Households</a>
+                    <div class="publication-authors">
+                        with Xavier Gabaix, Ralph Koijen, Federico Mainardi, and Motohiro Yogo 
+                        <a href="#">[SSRN]</a> 
+                        <span class="publication-date">(July 2025)</span>
+                    </div>
+                    <div class="publication-abstract">
+                        We study the asset demand of U.S. households, including ultra-high-net-worth (UHNW) households, across a wide range of asset classes.
+                    </div>
+                    <div class="presentation-info">
+                        • Presentations: Wharton Junior Conference on Valuations, AFA 2024, NBER Asset Pricing 2022, NBER Innovative Data in Household Finance, SED 2022, SFS Cavalcade 2023, WFA 2023, UC Boulder Leeds, UW-Madison Business School, NY Fed, Tilburg, U of Amsterdam, UIC, Columbia GSB, Stanford GSB, 3rd Annual Valuation Workshop
+                    </div>
+                    <div class="coverage-info">
+                        • Media: <a href="#">BFI Research Brief</a>
+                    </div>
+                </div>
+
+                <div class="publication">
+                    <div class="publication-number">4.</div>
+                    <a href="#" class="publication-title">Limited Risk Transfer Between Investors: A New Benchmark for Macro-Finance Models</a>
+                    <div class="publication-authors">
+                        with Xavier Gabaix, Ralph Koijen, Federico Mainardi, and Motohiro Yogo 
+                        <a href="#">[SSRN]</a> 
+                        <span class="publication-date">(December 2024)</span>
+                    </div>
+                    <div class="publication-abstract">
+                        Risk transfer (how much risk changes hands) is small: 0.65% per quarter. Standard models, however, predict 10x more. A new model with inelastic demand provides reconciliation.
+                    </div>
+                    <div class="presentation-info">
+                        • Presentations: CEPR Gerzensee (Scheduled), 4th Annual Holden Conference in Finance and Real Estate (Scheduled), Demand in Asset Markets (DAM) Working Group, NBER SI Household Finance 2024
+                    </div>
+                </div>
+
+                <div class="publication">
+                    <div class="publication-number">5.</div>
+                    <a href="#" class="publication-title">Climate Capitalists</a>
+                    <div class="publication-authors">
+                        with Niels Gormsen and Kilian Huber 
+                        <a href="#">[Slides]</a>
+                        <a href="#">[SSRN]</a> 
+                        <a href="#">[Project Website]</a> 
+                        <span class="publication-date">(April 2025)</span>
+                    </div>
+                    <div class="publication-abstract">
+                        Green firms & divisions report lower perceived cost of capital and discount rates in recent years, concurrent with the rise of "green investing."
+                    </div>
+                    <div class="award">Winner of the 2024 Moskowitz Prize</div>
+                    <div class="award">Winner of the 2025 FESE De la Vega Prize</div>
+                    <div class="presentation-info">
+                        • Presentations: SFS Cavalcade NA 2025, AFA 2025, Baruch JFQA Climate Finance and Sustainability Conference, Bocconi, Copenhagen, Duke, E-Axes forum (video), SFS Cavalcade 2024
+                    </div>
+                    <div class="coverage-info">
+                        • Coverage: <a href="#">BFI Research Brief</a>, Columbia Business School Newsroom, Mark Hulbert
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
