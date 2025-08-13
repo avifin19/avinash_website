@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Academic Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fafafa;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: white;
+            padding: 40px 0;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 30px;
+        }
+
+        .header-content h1 {
+            font-size: 2.5em;
+            color: #666;
+            font-weight: 300;
+            margin-bottom: 10px;
+        }
+
+        .header-content .subtitle {
+            font-size: 1.1em;
+            color: #888;
+            margin-bottom: 20px;
+        }
+
+        nav {
+            margin-top: 30px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #666;
+            font-weight: 400;
+            padding: 8px 0;
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover, nav a.active {
+            color: #007acc;
+            border-bottom-color: #007acc;
+        }
+
+        .content {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+
+        .intro {
+            margin-bottom: 40px;
+        }
+
+        .intro h2 {
+            font-size: 1.4em;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .contact-info {
+            margin: 20px 0;
+            font-size: 0.95em;
+        }
+
+        .contact-info a {
+            color: #007acc;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .research-focus {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 6px;
+            margin: 20px 0;
+        }
+
+        .research-focus strong {
+            color: #333;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h3 {
+            color: #555;
+            font-size: 1.3em;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .highlight {
+            background: #007acc;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 15px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px 0;
+            color: #888;
+            border-top: 1px solid #eee;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            header .header-content h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <h1>Your Name</h1>
+                <p class="subtitle">Assistant Professor of [Your Field], [Your University]</p>
+                
+                <nav>
+                    <ul>
+                        <li><a href="#home" class="active">Home</a></li>
+                        <li><a href="#cv">CV</a></li>
+                        <li><a href="#research">Research</a></li>
+                        <li><a href="#teaching">Teaching</a></li>
+                        <li><a href="#discussions">Discussions</a></li>
+                        <li><a href="#notebook">Notebook</a></li>
+                        <li><a href="#resources">Resources</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="content">
+            <div class="intro">
+                <div class="contact-info">
+                    <strong>Your Name</strong> (<a href="mailto:your.email@university.edu">your.email@university.edu</a>) 
+                    <a href="https://twitter.com/yourhandle">🐦</a> 
+                    <a href="mailto:your.email@university.edu">✉️</a> 
+                    <a href="https://linkedin.com/in/yourprofile">💼</a>
+                    <br>
+                    Assistant Professor of [Your Field], <a href="#">[Your University]</a>
+                </div>
+                
+                <div class="research-focus">
+                    My research is broadly within [your field], focusing on <span class="highlight">primary research area</span>, 
+                    <span class="highlight">secondary area</span>, and <span class="highlight">third area</span>. 
+                    My work focuses on [brief description of your research approach and interests, 
+                    mentioning any specific methodologies or tools you use].
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>About Me</h3>
+                <ul>
+                    <li>I obtained my Ph.D. from the <a href="#">[PhD Program]</a> at [University]. 
+                        Before graduate school, I graduated from [University] with a B.S. in [Field] and 
+                        an M.S./B.S. in [Other Field]. Prior to my doctoral studies, I worked at 
+                        <a href="#">[Previous Position/Company]</a> and <a href="#">[Other Experience]</a>.</li>
+                    
+                    <li>I run a daily newsletter called "[Newsletter Name]." You can sign up 
+                        <a href="#">here</a> and view past emails <a href="#">here</a>.</li>
+                    
+                    <li>I recently started a new blog with <a href="#">[Collaborator Name]</a> called 
+                        "[Blog Name]," which showcases interesting datasets and analyses. I also have a 
+                        weekly <a href="#">article round-up</a>, which grew out of a course I teach at [University].</li>
+                    
+                    <li>I host a podcast about [topic]. Listen <a href="#">here</a> (for [target audience]) 
+                        and <a href="#">here</a> (for [other target audience]).</li>
+                </ul>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
